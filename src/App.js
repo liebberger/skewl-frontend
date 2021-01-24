@@ -10,12 +10,11 @@ const client = new ApolloClient({
 export default function App() {
   return (
     <ApolloProvider client={client}>
-    <Router>
-      <Switch>
-        <Route path="/" component={MainPage} />
-      </Switch>
-    </Router>
+      <Router>
+        <Switch>
+          <Route path="/" component={MainPage} />
+        </Switch>
+      </Router>
     </ApolloProvider>
-
   );
 }
