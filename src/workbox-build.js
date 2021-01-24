@@ -6,7 +6,7 @@ const buildSW = () => {
   // Add a catch block to handle this scenario.
   return workboxBuild
     .injectManifest({
-      swSrc: "src/sw-custom.js", // custom sw rule
+      swSrc: "src/workbox.js", // custom sw rule
 
       swDest: "build/sw.js", // sw output file (auto-generated
 
